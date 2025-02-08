@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark text-light dark:bg-dark dark:text-light font-playfair-display;
+  }
+}
+
+.video-background {
+  position: fixed; /* Changed to fixed */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1; /* Keep z-index to -1 to ensure it's in the background */
+}
