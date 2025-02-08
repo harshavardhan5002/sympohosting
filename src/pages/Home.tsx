@@ -20,7 +20,7 @@ const Home = () => {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(/assests/1.png)',
+            backgroundImage: 'url(/assets/1.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -60,7 +60,7 @@ const Home = () => {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source src="/assests/vid.mp4" type="video/mp4" />
+            <source src="/assets/vv.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <div className="absolute inset-0 bg-black/50" /> {/* Dark overlay */}
