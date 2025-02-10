@@ -116,7 +116,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-black/50" /> {/* Dark overlay */}
         </div>
 
-        {/* Features Section - On top of Video Background */}
+        {/* Features Section - On top of Video Backgrounds */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10"> {/* Content sections above video */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <motion.div className="bg-gray-800/50 p-6 rounded-xl backdrop-blur-sm">
