@@ -71,7 +71,7 @@ const Home = () => {
               transition={{ delay: 1.2, duration: 0.8, type: "spring" }}
               className="text-6xl md:text-7xl font-bold text-white font-serif tracking-wider"
             >
-              Blitzkrieg
+              BlitzKrieg
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
