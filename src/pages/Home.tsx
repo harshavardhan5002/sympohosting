@@ -20,7 +20,7 @@ const Home = () => {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(/assets/1.png)',
+            backgroundImage: 'url(/assets/.png)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -32,21 +32,71 @@ const Home = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 flex flex-col justify-between h-full items-center px-4"
+          className="relative z-10 flex flex-col justify-center h-full items-center px-4 text-center"
         >
           <div className="flex-grow flex flex-col items-center justify-center">
-            <h1 className="text-5xl font-bold text-primary-100 mb-6"></h1>
-            <p className="text-lg text-gray-400"></p>
-          </div>
-          <div className="pb-20">
-            <Link
-              to="/register"
-              className="inline-flex items-center px-12 py-4 text-xl font-medium text-white bg-primary-600 rounded-full hover:bg-primary-700 transition-colors"
+          <motion.img
+            src="/assets/rmk.png"
+            alt="RMK Logo"
+            className="w-24 h-27 mx-auto mb-"
+            initial={{ scale: 0, rotate: -180 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ duration: 0.8, type: "spring", stiffness: 200 }}
+          />
+
+          <motion.div
+            className="space-y-2"
+          >
+            <h2 className="text-xl text-[#FFD700]/90 font-serif mb-2 tracking-wider">R.M.K. ENGINEERING COLLEGE</h2>
+            <p className="text-gray-300 text-sm mb-6 tracking-wide">
+              RSM Nagar, Kavaraipettai, Gummidipoondi Taluk, Thiruvallur District - 601 206
+            </p>
+          </motion.div>
+
+          <motion.div
+            className="space-y-6"
+          >
+            <h3 className="text-2xl text-[#FFD700]/90 font-serif tracking-wider">DEPARTMENT OF ELECTRICAL AND ELECTRONICS ENGINEERING</h3>
+            <motion.p
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 1, duration: 0.5 }}
+              className="text-[#FFD700] text-xl tracking-[0.2em]"
             >
-              Register Now
-              <ArrowRight className="ml-2 h-7 w-7" />
-            </Link>
+              PRESENTS
+            </motion.p>
+            <motion.h1
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2, duration: 0.8, type: "spring" }}
+              className="text-6xl md:text-7xl font-bold text-white font-serif tracking-wider"
+            >
+              Blitzkrieg
+            </motion.h1>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.8, duration: 0.5 }}
+              className="text-4xl text-[#FFD700] font-serif mb-8"
+            >
+              2025
+            </motion.p>
+             <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2.0, duration: 0.5 }}
+            >
+              <Link
+                to="/register"
+                className="inline-flex items-center px-12 py-4 text-xl font-medium text-black bg-golden-400 rounded-full hover:bg-golden-500 transition-colors shadow-md hover:shadow-lg"
+              >
+                Register Now
+                <ArrowRight className="ml-2 h-7 w-7" />
+              </Link>
+            </motion.div>
+          </motion.div>
           </div>
+
         </motion.div>
       </section>
 
@@ -127,3 +177,4 @@ const Home = () => {
 };
 
 export default Home;
+

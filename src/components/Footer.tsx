@@ -1,9 +1,22 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { MapPin, Mail, Github, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const navItems = [
+    { path: '/about', label: 'About Us' },
+    { path: '/rules', label: 'Rules' },
+    { path: '/event1', label: 'Paper Presentation' },
+    { path: '/event2', label: 'El Casino' },
+    { path: '/event3', label: 'Electro Quest' },
+    { path: '/event4', label: 'Circuit Debugging' },
+    { path: '/event5', label: 'Locked In' },
+    { path: '/map', label: 'Map' },
+    { path: '/register', label: 'Register' },
+  ];
+
   return (
-    <footer className="bg-black text-gray-300 mt-20 relative z-10"> {/* Added relative and z-10 */}
+    <footer className="bg-black text-gray-300 mt-20 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -24,21 +37,16 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4 text-primary-100">Quick Links</h3>
             <ul className="space-y-2">
-              <li>
-                <a href="/about" className="hover:text-primary-500 transition-colors">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="/register" className="hover:text-primary-500 transition-colors">
-                  Register
-                </a>
-              </li>
-              <li>
-                <a href="/map" className="hover:text-primary-500 transition-colors">
-                  Venue Map
-                </a>
-              </li>
+              {navItems.map((item) => (
+                <li key={item.path}>
+                  <Link
+                    to={item.path}
+                    className="hover:text-primary-500 transition-colors"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -61,3 +69,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
