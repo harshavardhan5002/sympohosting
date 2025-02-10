@@ -108,8 +108,8 @@ const Event3 = () => {
                             <div className="space-y-6">
                               {[
                                 { time: "10:00 AM", event: "Registration & Team Formation" },
-                                { time: "11:30 AM", event: "First Round" },
-                                { time: "12.30 PM", event: "Second round" },
+                                { time: "11:30 AM", event: "First Round - Circuit Spark" },
+                                { time: "12.30 PM", event: "Second round - Power Up Puzzle" },
 
                                 { time: "1.00 PM", event: "Winners Announcements" }
                               ].map((item, index) => (
