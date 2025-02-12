@@ -47,7 +47,7 @@ const Home = () => {
           <motion.div
             className="space-y-2"
           >
-            <h2 className="text-xl text-[#FFD700]/90 font-serif mb-2 tracking-wider">R.M.K. ENGINEERING COLLEGE</h2>
+            <h2 className="text-3xl text-[#FFD700]/90 font-serif mb-2 tracking-wider">R.M.K. ENGINEERING COLLEGE (An Autonomous Institution)</h2>
             <p className="text-gray-300 text-sm mb-6 tracking-wide">
               RSM Nagar, Kavaraipettai, Gummidipoondi Taluk, Thiruvallur District - 601 206
             </p>
@@ -56,7 +56,7 @@ const Home = () => {
           <motion.div
             className="space-y-6"
           >
-            <h3 className="text-2xl text-[#FFD700]/90 font-serif tracking-wider">DEPARTMENT OF ELECTRICAL AND ELECTRONICS ENGINEERING</h3>
+            <h3 className="text-xl text-[#FFD700]/90 font-serif tracking-wider">DEPARTMENT OF ELECTRICAL AND ELECTRONICS ENGINEERING</h3>
             <motion.p
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
