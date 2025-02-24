@@ -25,11 +25,11 @@ const Rules = () => {
           <ul className="space-y-4">
             {[
               "Students must bring their respective college ID card.",
-              "Mobile phones are not allowed inside the campus.",
+              
               "Confirmation mail for selection will be sent to your registered mail id.",
               "Participants must only use the college bus which will be available on March 17th.",
-              "Boys must come in formal with clean shave. ",
-              "Girls should wear formal dress.",
+              
+              
               "No on spot Registration Allowed."
             ].map((rule, index) => (
               <motion.li
